@@ -1,0 +1,35 @@
+﻿@model IEnumerable<FizzBuzz.Models.FizzNum>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<table class="table ">
+    <thead>
+        <tr>
+            <th>
+               <p> Here we go </p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr class="table-primary">
+            <td>
+                @Html.DisplayFor(modelItem => item.FZN)
+           </td>
+                @*   <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>*@
+        </tr>
+           
+}
+    </tbody>
+</table>
