@@ -7,10 +7,10 @@
 
 
 
-
-<table class="table  ">
+<div> 
+<table class="list-group">
     <thead>
-        <tr class="table-primary"" >
+            <tr class="list-group-item list-group-item-action active">
             <th>
                <p> Here we go </p>
             </th>
@@ -19,7 +19,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-            <tr >
+                <tr class="list-group-item list-group-item-action">
             <td>
                 @Html.DisplayFor(modelItem => item.FZN)
            </td>
@@ -29,3 +29,4 @@
 }
     </tbody>
 </table>
+</div>
