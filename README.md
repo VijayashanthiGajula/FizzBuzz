@@ -12,4 +12,4 @@ populated through code first approach of EF Core and Data seeding. Bootstrap for
 
 
 
-Azure Link for the website: https://challengebuzz.azurewebsites.net/
+
